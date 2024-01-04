@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="~/lib/twitter-bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/lib/font-awesome/css/all.min.css" />
+    <title>JJ Sports Store</title>
+</head>
+<body>
+    <div class="container">    
+        <div class="bg-dark text-white p-2">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col navbar-brand">JJ SPORTS STORE</div>
+                    <div class="col-6 text-right">
+                        <vc:cart-summary />
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row m-1 p-1">
+            <div id="categories" class="col-4">
+                <vc:navigation-menu />
+            </div>
+            <div class="col-8">
+                @RenderBody()
+            </div>
+        </div>
+    </div>
+</body>
+</html>
